@@ -1,0 +1,149 @@
+body {
+    background-image: url('/images/deftec2.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    /* background-color:yellow; */
+    background-attachment:fixed;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#app {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content and footer fit in the viewport */
+}
+
+.small-box {
+    flex: 1;
+    margin: 10px; /* Space between the boxes */
+    min-width: 150px; /* Set a minimum width to prevent them from becoming too small */
+  }
+.navbar-brand-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: auto; /* This pushes the brand to the far left */
+    font-size: 1.25rem; /* Adjust the size if necessary */
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+}
+
+.navbar-brand-1 p {
+    margin: 0; /* Ensure no extra margins around the text */
+}
+
+.modal-content {
+    animation: swing 0.6s ease-in-out;
+}
+
+@keyframes swing {
+    20% { transform: rotate(15deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(5deg); }
+    80% { transform: rotate(-5deg); }
+    100% { transform: rotate(0); }
+}
+
+.sidebar-dark-primary {
+    background-color: #343a40 !important;
+}
+
+.sidebar-dark-primary .nav-sidebar .nav-treeview .nav-link {
+    color: #c2c7d0;
+}
+
+.sidebar-dark-primary .nav-treeview .nav-link.active {
+    background-color: #495057;
+}
+
+
+.navbar-dark {
+    background-color: #343a40 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #c2c7d0 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row; /* Aligns sidebar and content in a row */
+    min-height: 100vh; /* Ensures full height */
+}
+
+.content-wrapper {
+    flex: 1; /* This allows the content wrapper to grow and fill available space */
+    background-color: #f4f6f9;
+    padding: 20px;
+    min-height: calc(100vh - 60px); /* Adjust height considering footer height */
+}
+
+
+
+.small-box {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.small-box .inner {
+    padding: 10px;
+}
+
+.small-box h3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.small-box p {
+    color: #666;
+}
+
+.small-box-footer {
+    display: block;
+    color: #666666;
+    text-decoration: none;
+    padding: 10px;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.05);
+     
+ 
+}
+
+.small-box-footer:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: green;
+    position: fixed; /* Change to fixed */
+    bottom: 0; /* Ensure it's at the bottom */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Ensure it spans the full width */
+    padding: 10px; /* Adjust padding as necessary */
+    text-align: center; /* Center the content, if desired */
+    z-index: 1000; /* Keep it above other elements */
+}
+
+.marquee {
+    display: inline-block; /* Ensure the marquee content aligns properly */
+}
+
+
+
+
